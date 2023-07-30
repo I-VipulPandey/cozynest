@@ -74,6 +74,9 @@ function linkNavigator() {
       behavior:"smooth"
     })
   })
+
+  
+
 }
   
 OpenCloseButton()

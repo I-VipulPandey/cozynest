@@ -203,11 +203,11 @@ font-size: 2.5vmax;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     color: #fff;
 
-    background-image: url('./assets/images/HOME_HERO_01_1280x.webp');
+    background-image: url('./assets/images/indoor-shot-unrecognizable-woman-dressed-pajama-keeps-legs-raised-up-wears-socks-poses-bed-blanket-doesnt-want-get-up-isolated-beige-studio-background-hard-awakening.jpg');
 }
 
 #page1 h1 {
@@ -341,15 +341,19 @@ font-size: 2.5vmax;
 }
 
 .image-card1 {
-    background-image: url("./assets/images/RES_211103_SG_Earthfoam_Shot08_Talent_Group_00271_3274SG_B_ADOBERGB_1280x.webp");
+    background-image: url("./assets/images/comfortable-modern-bedroom-with-elegant-wood-headboard-generated-by-ai.jpg");
 }
 
 .image-card2 {
-    background-image: url('./assets/images/Home_Product_Topper_Hover_1280x.webp');
+    background-image: url('./assets/images/beautiful-view-modern-bedroom-white-colors.jpg');
 }
 
 .image-card3 {
-    background-image: url('./assets/images/Home_Product_Pillow_Hover_1280x.webp');
+    background-image: url('./assets/images/beige-cushion-home-decor-sofa.jpg');
+}
+
+.image-card4 {
+    background-image: url('./assets/images/hand-soft-duvet.jpg');
 }
 
 .image-card {
@@ -849,9 +853,12 @@ footer{
             height: 60vw;
         }
 
-        .image-card3{
+        .image-card:last-child{
+
             margin-bottom: 20vh;
         }
+
+        
 
         .image-card .image-data{
             font-size: 2.5vmax;
