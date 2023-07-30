@@ -30,40 +30,6 @@ function OpenCloseButton() {
   
 }
 
-function PageColorChange() {
-
-  var container = document.querySelectorAll(".image-card");
-  var viewProduct = document.querySelectorAll('.view-product');
-
-
-  // arrow and round text movement
-
-  for (let i = 0; i < container.length; i++) {
-      container[i].addEventListener("mousemove", function (e) {
-
-
-          var bndrectvals = container[i].getBoundingClientRect()
-          var xVal = Math.abs(e.clientX - bndrectvals.x);
-          var yVal = Math.abs(e.clientY - bndrectvals.y);
-
-        viewProduct[i].style.display='flex'
-          viewProduct[i].style.left = xVal + "px";
-          viewProduct[i].style.top = yVal + "px";
-
-      })
-    
-      container[i].addEventListener("mouseleave", function (e) {
-
-
-
-      viewProduct[i].style.display='none'
-
-    })
-
-
-  }
-
-}
 
 function swiper() {
   
@@ -78,7 +44,38 @@ function swiper() {
     });
 }
   
+function linkNavigator() {
+
+  document.querySelectorAll('.shop').forEach(function (elem) {
+    elem.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('#page3').scrollIntoView({
+        behavior:"smooth"
+      })
+    })
+  })
+
+  document.querySelector('.story').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#page5').scrollIntoView({
+      behavior:"smooth"
+    })
+  })
+
+  document.querySelector('.journal').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#page4').scrollIntoView({
+      behavior:"smooth"
+    })
+  })
+  document.querySelector('.contact').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('footer').scrollIntoView({
+      behavior:"smooth"
+    })
+  })
+}
   
 OpenCloseButton()
-PageColorChange()
 swiper()
+linkNavigator()
