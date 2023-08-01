@@ -1,32 +1,32 @@
 @font-face {
     font-family: sangblue;
-    src: url(./assets/fonts/SangBleuSunrise-Regular-WebS.ttf);
+    src: url("./assets/fonts/SangBleuSunrise-Regular-WebS.ttf");
 }
 
 @font-face {
     font-family: sangblueItalic;
-    src: url(./assets/fonts/SangBleuSunrise-RegularItalic-WebS.ttf);
+    src: url("./assets/fonts/SangBleuSunrise-RegularItalic-WebS.ttf");
 }
 
 @font-face {
     font-family: GT;
-    src: url(./assets/fonts/GT-America-Standard-Regular.ttf);
+    src: url("./assets/fonts/GT-America-Standard-Regular.ttf");
 }
 
 @font-face {
     font-family: GTMd;
-    src: url(./assets/fonts/GT-America-Standard-Medium.ttf);
+    src: url("./assets/fonts/GT-America-Standard-Medium.ttf");
 }
 
 @font-face {
     font-family: GTLt;
-    src: url(./assets/fonts/GT-America-Standard-Light.ttf);
+    src: url("./assets/fonts/GT-America-Standard-Light.ttf");
 }
 
 
 @font-face {
     font-family: aloha;
-    src: url(./assets/fonts/Aloha.ttf);
+    src: url("./assets/fonts/Aloha.ttf");
 }
 
 
@@ -61,6 +61,35 @@ body {
     background-color: #F8F7ED;
     font-family: GT;
 }
+
+
+.custom-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #E4B78E;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: s7 1s infinite steps(8);
+  }
+  
+  @keyframes s7 {
+    100% {transform: rotate(1turn)}
+  }
+
+  #main{
+    display: none;
+  }
 
 #fullscreen-nav {
     top: 0%;
@@ -207,7 +236,7 @@ font-size: 2.5vmax;
     background-size: cover;
     color: #fff;
 
-    background-image: url('./assets/images/indoor-shot-unrecognizable-woman-dressed-pajama-keeps-legs-raised-up-wears-socks-poses-bed-blanket-doesnt-want-get-up-isolated-beige-studio-background-hard-awakening.jpg');
+    background-image: url('./assets/images/indoor-shot-unrecognizable-woman-dressed-pajama-keeps-legs-raised-up-wears-socks-poses-bed-blanket-doesnt-want-get-up-isolated-beige-studio-background-hard-awakening.webp');
 }
 
 #page1 h1 {
@@ -341,19 +370,19 @@ font-size: 2.5vmax;
 }
 
 .image-card1 {
-    background-image: url("./assets/images/comfortable-modern-bedroom-with-elegant-wood-headboard-generated-by-ai.jpg");
+    background-image: url("./assets/images/comfortable-modern-bedroom-with-elegant-wood-headboard-generated-by-ai.webp");
 }
 
 .image-card2 {
-    background-image: url('./assets/images/beautiful-view-modern-bedroom-white-colors.jpg');
+    background-image: url('./assets/images/beautiful-view-modern-bedroom-white-colors.webp');
 }
 
 .image-card3 {
-    background-image: url('./assets/images/beige-cushion-home-decor-sofa.jpg');
+    background-image: url('./assets/images/beige-cushion-home-decor-sofa.webp');
 }
 
 .image-card4 {
-    background-image: url('./assets/images/hand-soft-duvet.jpg');
+    background-image: url('./assets/images/hand-soft-duvet.webp');
 }
 
 .image-card {

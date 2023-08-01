@@ -78,6 +78,14 @@ function linkNavigator() {
   
 
 }
+
+// Wait for the whole page to load
+window.addEventListener('load', function () {
+  // Hide the loader
+  document.querySelector('.custom-loader').style.display = 'none';
+  // Show the content
+  document.querySelector('#main').style.display = 'block';
+});
   
 OpenCloseButton()
 swiper()
